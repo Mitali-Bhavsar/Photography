@@ -1,0 +1,431 @@
+/*-------body--------*/
+:root {
+  --white: #fff; 
+  --black: #0d0d0d;
+}
+body,html { 
+  font-family: sans-serif; 
+  padding: 0; 
+  margin: 0; 
+}
+a{
+    color: var(--white) !important;
+}
+a:hover{
+    color:   #e6cd18  !important;
+    border-bottom: 1px solid #e6cd18 ;
+}
+p {
+  text-align: justify !important;
+  letter-spacing: 0.6px;
+    line-height: 1.8;
+    word-spacing: 0.5rem;
+}
+/*-------header--------*/
+.navbar-inner {
+    background:transparent;
+}
+.container-fluid.main{
+    position: relative; /* To make the navbar positions relative to this container */
+    padding: 0;
+  }
+  .navbar-default {
+    background-image: none;
+    background-color: transparent; /* Make the menu become transparent */
+    border-radius: 0px;
+    border: 0;
+    box-shadow: none;
+    padding: 10px;
+    position: absolute; /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+  } 
+  .main img{
+    width: 100%;
+    height: 36.5rem;
+  }
+  #navbarSupportedContent ul li a{
+    margin: 15px 35px 5px 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .c-heading1{
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    top: -20rem;
+    color: var(--black);
+  }
+  .c-heading2{
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    top: -15rem;
+    color:  var(--white);
+  }
+  .c-heading3{
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    top: -20rem;
+    left:32rem;
+    color: var(--black);
+  }
+  .c-heading4{
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    top: -15rem;
+    left:32rem;
+    color: var(--white);
+  }
+  .sticky{
+    position: fixed;
+    background-color:  var(--black);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.slide-number{
+  position: absolute;
+  left: 38rem;
+  background: transparent;
+  top: 91%;
+  font-size: 1rem;
+  color: var(--white);
+  opacity: 0.6;
+}
+
+ @media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav {
+      display: contents !important;
+  }
+    }
+/*-------gallary--------*/
+.alt-Img1 img{
+    width: 21rem;
+    height: 32rem;
+    padding: 18px;
+}
+.alt-Img2 img{
+    width:21rem;
+    height: 16rem;
+    padding:18px;
+}
+.alt-Img2,.alt-Img1{
+  margin: 0.5em 0.5em;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.b-bottom{
+  border-bottom: 2px solid  var(--black);
+ 
+}
+.heading{
+  font-size: 2.1rem;
+  color: rgb(239, 176, 93);
+  font-weight: 400;
+ /* border-bottom: 2px solid rgb(239, 176, 93);*/
+  text-align: start;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.heading:after{
+  border: solid 1px var(--black);
+  border-color: inherit;
+  content: '';
+  display: block;
+  height: 0;
+  
+  width: 11rem;
+}
+.heading:before{
+  border: solid 1px var(--black);
+  border-color: inherit;
+  content: '';
+  display: block;
+  height: 0;
+  margin-top: .75rem;
+  width: 11rem;
+}
+
+/*--------testimonial-----*/
+.testimonial-img img{
+  width: 100%;
+  height: 20rem;
+}
+.testimonial p{
+  text-align: justify;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+.testimonial .carousel-inner{
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+}
+/*---------bg-image---------*/
+.bg-image{
+  background-image: url("../Images/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height:31rem;
+ }
+ .bg-image p{
+ text-align: center;
+  padding: 100px 10px 10px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  color: var(--white);
+  
+ }
+
+ /**text ZOOM**/
+.zoomer {
+  transform-origin: center center;
+  animation: zoomer 10s linear infinite; 
+  font-size: 5em;
+}
+@keyframes zoomer {
+  0% {transform: scaleX(1);}
+  50% {transform: scaleX(0.85);}
+  100% {transform: scaleX(1);}
+}
+ /*---------Drone Space---------*/
+.p-align{
+  text-align: center;
+  padding: 4rem;
+}
+.p-align p{
+letter-spacing: 0.6px;
+line-height: 1.8;
+word-spacing: 0.5rem;
+}
+.p-align button:hover, .bg-image-couple button:hover{
+opacity:0.6
+}
+/*-----horizontal images slider--------*/
+.carousel1 img {
+  width: 100%;
+  height: 25rem;
+  border-radius: 2%;
+  padding: 8px;
+}
+.carousel1-inner {
+  padding: 1em;
+}
+
+@media screen and (min-width: 576px) {
+  .carousel1-inner {
+    display: flex;
+    width: 100%;
+    margin-inline: auto;
+    padding: 1em 0;
+    overflow: hidden;
+  }
+  .carousel1-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel1-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 3);
+  }
+}
+.carousel1 .card1 {
+  margin: 0 0.5em;
+  border: 0;
+}
+
+.carousel1-control-prev{
+  width: 3rem;
+  height: 3rem;
+  background-color:var(--black);
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel1-control-next {
+  width: 3rem;
+  height: 3rem;
+  background-color:var(--black);
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left:77%;
+  transform: translateY(-50%);
+}
+/*---take a look-----*/
+.a-justify{
+  text-align: justify;
+}
+/*welcome*/
+.welcome img{
+  width: 100%;
+  height: 330px;
+  box-shadow: 18px 18px 5px rgb(195, 195, 196);
+}
+/*---------bg-image couple---------*/
+.bg-image-couple{
+  background-image: url("../Images/couple-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height:21rem;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+
+ }
+ .bg-image-couple p{
+  text-align: center;
+   padding: 100px 10px 10px;
+   font-size: 3.5rem;
+   font-weight: 500;
+   letter-spacing: 0.8px;
+   color: rgb(207, 11, 28);
+   
+  }
+  /*footer*/
+.footer{
+  border-top: 2px solid var(--black);
+  background-color: #4d4c4c;
+  color: var(--white);
+  padding-top: 6px;
+}
+.footer p{
+  text-align: justify;
+}
+.bottom-footer{
+  background-color: var(--black);
+  color: var(--white);
+}
+.dropdown-menu ,.dropdown-item:hover {
+  background-color: #414040 !important;
+}
+
+.footer .half-title:after{
+  border: solid 1px transparent;
+  border-color: inherit;
+  content: '';
+  display: block;
+  height: 0;
+  margin-top: .75rem;
+  width: 6rem;
+}
+/*----client -------*/
+
+@keyframes moveBg {
+  from { background-position: 0 50%; }
+  to { background-position:  -1134px 50%; }
+}
+
+.carousel3 {
+  --blur: -1px;
+  --contrast: 80%;
+  --speed: 13s;
+  height: 138px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+
+  .mask3 {
+    position: absolute;
+    inset: 0;
+    background: #0000;
+    backdrop-filter: blur(var(--blur)) contrast(var(--contrast));
+    -webkit-backdrop-filter: blur(var(--blur)) contrast(var(--contrast)); /* so it works on Safari */
+   
+    pointer-events: none;
+  }
+
+  .logos {
+    animation: moveBg var(--speed) linear infinite;
+    position: absolute;
+    inset: 0;
+    background: url(../Images/clint-logo.jpg) 0 53% / 618px 90px repeat-x;
+   
+  }
+}
+@media(min-width:357px) and (max-width:579px){
+  .bg-image p{
+    text-align: center !important;
+     padding: 20px 10px 10px;
+     font-size: 2.5rem;
+     font-weight: 500;
+     letter-spacing: 0.5px;
+     color: var(--white);
+     
+    }
+    .bg-image-couple p {
+      text-align: center !important;
+      padding: 15px 10px 10px;
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      color: rgb(207, 11, 28);
+  }
+  .alt-Img1 img{
+    width: 21rem;
+    height: 32rem;
+    padding: 18px;
+}
+.alt-Img2 img{
+    width:21rem;
+    height: 16rem;
+    padding:18px;
+}
+ }
+@media(min-width:580px) and (max-width:990px){
+  .bg-image p{
+    text-align: center !important;
+     padding: 20px 10px 10px;
+     font-size: 3rem;
+     font-weight: 500;
+     letter-spacing: 0.5px;
+     color: var(--white);
+     
+    }
+    .bg-image-couple p {
+      text-align: center !important;
+      padding: 15px 10px 10px;
+      font-size: 3rem;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      color: rgb(207, 11, 28);
+  }
+  .alt-Img1 img{
+    width: 11rem;
+    height: 22rem;
+    padding: 18px;
+}
+.alt-Img2 img{
+    width:11rem;
+    height: 8rem;
+    padding:18px;
+}
+}
+@media(min-width:990px) and (max-width:1190px){
+  .alt-Img1 img{
+    width: 18rem;
+    height: 29rem;
+    padding: 18px;
+}
+.alt-Img2 img{
+    width:18rem;
+    height: 13rem;
+    padding:18px;
+}
+}
